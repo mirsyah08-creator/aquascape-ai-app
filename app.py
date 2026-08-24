@@ -7,7 +7,7 @@ st.title("🌿 AquaAI: Aquascape & Plant Health Advisor")
 st.write("Diagnose parameter imbalances, lighting issues, and algae outbreaks instantly.")
 
 # User inputs API Key (or store securely in environment secrets)
-api_key = st.sidebar.text_input("Enter OpenAI API Key", type="password")
+api_key = st.secrets["OPENAI_API_KEY"]
 
 st.subheader("1. Enter Your Tank Parameters")
 col1, col2 = st.columns(2)
